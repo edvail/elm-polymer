@@ -37,38 +37,69 @@ module Polymer.Paper
         )
 
 {-|
+#
 @docs badge
+#
 @docs behaviors
+#
 @docs button
+#
 @docs card
+#
 @docs checkbox
+#
 @docs dialog
+#
 @docs dialogBehavior
+#
 @docs dialogScrollable
+#
 @docs drawerPanel
+#
 @docs dropdownMenu
+#
 @docs fab
+#
 @docs headerPanel
+#
 @docs iconButton
+#
 @docs input
 #A material-design styled list item
 @docs item, iconItem, itemBody
+#
 @docs listbox
+#
 @docs material
+#
 @docs menu
+#
 @docs menuButton
+#
 @docs progress
+#
 @docs radioButton
+#
 @docs radioGroup
+#
 @docs ripple
+#
 @docs scrollHeaderPanel
+#
 @docs slider
+#
 @docs spinner
+#
 @docs styles
+#
 @docs tabs
+#
 @docs toast
+#
 @docs toggleButton
+#
 @docs toolbar
+#
 @docs tooltip
 -}
 

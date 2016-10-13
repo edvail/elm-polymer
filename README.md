@@ -1,5 +1,7 @@
-# elm-polymer
-
+# edvail/elm-polymer
+```bash
+elm package install edvail/elm-polymer
+```
 ```elm
 import Polymer.Paper as Paper
 import Polymer.Attributes

@@ -196,21 +196,23 @@ input =
     paper "input"
 
 
-{-| <paper-item> is an interactive list item. By default, it is a horizontal flexbox.
+{-| Material design: Lists
+
+`item` is an interactive list item. By default, it is a horizontal flexbox.
 -}
 item : List (Attribute msg) -> List (Html msg) -> Html msg
 item =
     paper "item"
 
 
-{-| <paper-icon-item> is a convenience element to make an item with icon. It is an interactive list item with a fixed-width icon area, according to Material Design. This is useful if the icons are of varying widths, but you want the item bodies to line up. Use this like a <paper-item>. The child node with the attribute item-icon is placed in the icon area.
+{-| `iconItem` is a convenience element to make an item with icon. It is an interactive list item with a fixed-width icon area, according to Material Design. This is useful if the icons are of varying widths, but you want the item bodies to line up. Use this like a <paper-item>. The child node with the attribute `itemIcon` is placed in the icon area.
 -}
 iconItem : List (Attribute msg) -> List (Html msg) -> Html msg
 iconItem =
     paper "icon-item"
 
 
-{-| Use <paper-item-body> in a <paper-item> or <paper-icon-item> to make two- or three- line items. It is a flex item that is a vertical flexbox.
+{-| Use `itemBody` in a `item` or `iconItem` to make two- or three- line items. It is a flex item that is a vertical flexbox.
 -}
 itemBody : List (Attribute msg) -> List (Html msg) -> Html msg
 itemBody =
@@ -291,7 +293,7 @@ styles =
 
 {-| Material design: Tabs
 
-paper-tabs makes it easy to explore and switch between different views or functional aspects of an app, or to browse categorized data sets.
+`tabs` makes it easy to explore and switch between different views or functional aspects of an app, or to browse categorized data sets.
 
 Use selected property to get or set the selected tab.
 -}
@@ -300,7 +302,7 @@ tabs =
     paper "tabs"
 
 
-{-| paper-tab is styled to look like a tab. It should be used in conjunction with paper-tabs.
+{-| `tab` is styled to look like a tab. It should be used in conjunction with `tabs`.
 -}
 tab : List (Attribute msg) -> List (Html msg) -> Html msg
 tab =

@@ -30,6 +30,7 @@ module Polymer.Paper
         , spinner
         , styles
         , tabs
+        , tab
         , toast
         , toggleButton
         , toolbar
@@ -37,69 +38,69 @@ module Polymer.Paper
         )
 
 {-|
-#
+#Material design status message for elements
 @docs badge
-#
+#Common behaviors across the paper elements
 @docs behaviors
-#
+#Material design button
 @docs button
-#
+#Material design piece of paper with unique related data
 @docs card
-#
+#A material design checkbox
 @docs checkbox
-#
+#A Material Design dialog
 @docs dialog
-#
+#Implements a behavior used for material design dialogs
 @docs dialogBehavior
-#
+#A scrollable area used inside the material design dialog
 @docs dialogScrollable
-#
+#A responsive drawer panel
 @docs drawerPanel
-#
+#An element that works similarly to a native browser select
 @docs dropdownMenu
-#
+#A material design floating action button
 @docs fab
-#
+#A header and content wrapper for layout with headers
 @docs headerPanel
-#
+#A material design icon button
 @docs iconButton
-#
+#Material design text fields
 @docs input
 #A material-design styled list item
 @docs item, iconItem, itemBody
-#
+#Implements an accessible material design listbox
 @docs listbox
-#
+#A material design container that looks like a lifted sheet of paper
 @docs material
-#
+#Implements an accessible material design menu
 @docs menu
-#
+#A material design element that composes a trigger and a dropdown menu
 @docs menuButton
-#
+#A material design progress bar
 @docs progress
-#
+#A material design radio button
 @docs radioButton
-#
+#A group of material design radio buttons
 @docs radioGroup
-#
+#Adds a material design ripple to any container
 @docs ripple
-#
+#A header bar with scrolling behavior
 @docs scrollHeaderPanel
-#
+#A material design-style slider
 @docs slider
-#
+#A material design spinner
 @docs spinner
-#
+#Common (global) styles for Material Design elements.
 @docs styles
-#
-@docs tabs
-#
+#Material design tabs
+@docs tabs, tab
+#A material design notification toast
 @docs toast
-#
+#A material design toggle button control
 @docs toggleButton
-#
+#A material design toolbar that is easily customizable
 @docs toolbar
-#
+#Material design tooltip popup for content
 @docs tooltip
 -}
 
@@ -111,99 +112,85 @@ paper name =
     "paper-" ++ name |> node
 
 
-{-| Material design status message for elements
--}
+{-| -}
 badge : List (Attribute msg) -> List (Html msg) -> Html msg
 badge =
     paper "badge"
 
 
-{-| Common behaviors across the paper elements
--}
+{-| -}
 behaviors : List (Attribute msg) -> List (Html msg) -> Html msg
 behaviors =
     paper "behaviors"
 
 
-{-| Material design button
--}
+{-| -}
 button : List (Attribute msg) -> List (Html msg) -> Html msg
 button =
     paper "button"
 
 
-{-| Material design piece of paper with unique related data
--}
+{-| -}
 card : List (Attribute msg) -> List (Html msg) -> Html msg
 card =
     paper "card"
 
 
-{-| A material design checkbox
--}
+{-| -}
 checkbox : List (Attribute msg) -> List (Html msg) -> Html msg
 checkbox =
     paper "checkbox"
 
 
-{-| A Material Design dialog
--}
+{-| -}
 dialog : List (Attribute msg) -> List (Html msg) -> Html msg
 dialog =
     paper "dialog"
 
 
-{-| Implements a behavior used for material design dialogs
--}
+{-| -}
 dialogBehavior : List (Attribute msg) -> List (Html msg) -> Html msg
 dialogBehavior =
     paper "dialog-behavior"
 
 
-{-| A scrollable area used inside the material design dialog
--}
+{-| -}
 dialogScrollable : List (Attribute msg) -> List (Html msg) -> Html msg
 dialogScrollable =
     paper "dialog-scrollable"
 
 
-{-| A responsive drawer panel
--}
+{-| -}
 drawerPanel : List (Attribute msg) -> List (Html msg) -> Html msg
 drawerPanel =
     paper "drawer-panel"
 
 
-{-| An element that works similarly to a native browser select
--}
+{-| -}
 dropdownMenu : List (Attribute msg) -> List (Html msg) -> Html msg
 dropdownMenu =
     paper "dropdown-menu"
 
 
-{-| A material design floating action button
--}
+{-| -}
 fab : List (Attribute msg) -> List (Html msg) -> Html msg
 fab =
     paper "fab"
 
 
-{-| A header and content wrapper for layout with headers
--}
+{-| -}
 headerPanel : List (Attribute msg) -> List (Html msg) -> Html msg
 headerPanel =
     paper "header-panel"
 
 
-{-| A material design icon button
--}
+{-| -}
 iconButton : List (Attribute msg) -> List (Html msg) -> Html msg
 iconButton =
     paper "icon-button"
 
 
-{-| Material design text fields
--}
+{-| -}
 input : List (Attribute msg) -> List (Html msg) -> Html msg
 input =
     paper "input"
@@ -230,120 +217,115 @@ itemBody =
     paper "item-body"
 
 
-{-| Implements an accessible material design listbox
--}
+{-| -}
 listbox : List (Attribute msg) -> List (Html msg) -> Html msg
 listbox =
     paper "listbox"
 
 
-{-| A material design container that looks like a lifted sheet of paper
--}
+{-| -}
 material : List (Attribute msg) -> List (Html msg) -> Html msg
 material =
     paper "material"
 
 
-{-| Implements an accessible material design menu
--}
+{-| -}
 menu : List (Attribute msg) -> List (Html msg) -> Html msg
 menu =
     paper "menu"
 
 
-{-| A material design element that composes a trigger and a dropdown menu
--}
+{-| -}
 menuButton : List (Attribute msg) -> List (Html msg) -> Html msg
 menuButton =
     paper "menu-button"
 
 
-{-| A material design progress bar
--}
+{-| -}
 progress : List (Attribute msg) -> List (Html msg) -> Html msg
 progress =
     paper "progress"
 
 
-{-| A material design radio button
--}
+{-| -}
 radioButton : List (Attribute msg) -> List (Html msg) -> Html msg
 radioButton =
     paper "radio-button"
 
 
-{-| A group of material design radio buttons
--}
+{-| -}
 radioGroup : List (Attribute msg) -> List (Html msg) -> Html msg
 radioGroup =
     paper "radio-group"
 
 
-{-| Adds a material design ripple to any container
--}
+{-| -}
 ripple : List (Attribute msg) -> List (Html msg) -> Html msg
 ripple =
     paper "ripple"
 
 
-{-| A header bar with scrolling behavior
--}
+{-| -}
 scrollHeaderPanel : List (Attribute msg) -> List (Html msg) -> Html msg
 scrollHeaderPanel =
     paper "scroll-header-panel"
 
 
-{-| A material design-style slider
--}
+{-| -}
 slider : List (Attribute msg) -> List (Html msg) -> Html msg
 slider =
     paper "slider"
 
 
-{-| A material design spinner
--}
+{-| -}
 spinner : List (Attribute msg) -> List (Html msg) -> Html msg
 spinner =
     paper "spinner"
 
 
-{-| Common (global) styles for Material Design elements.
--}
+{-| -}
 styles : List (Attribute msg) -> List (Html msg) -> Html msg
 styles =
     paper "styles"
 
 
-{-| Material design tabs
+{-| Material design: Tabs
+
+paper-tabs makes it easy to explore and switch between different views or functional aspects of an app, or to browse categorized data sets.
+
+Use selected property to get or set the selected tab.
 -}
 tabs : List (Attribute msg) -> List (Html msg) -> Html msg
 tabs =
     paper "tabs"
 
 
-{-| A material design notification toast
+{-| paper-tab is styled to look like a tab. It should be used in conjunction with paper-tabs.
 -}
+tab : List (Attribute msg) -> List (Html msg) -> Html msg
+tab =
+    paper "tab"
+
+
+{-| -}
 toast : List (Attribute msg) -> List (Html msg) -> Html msg
 toast =
     paper "toast"
 
 
-{-| A material design toggle button control
--}
+{-| -}
 toggleButton : List (Attribute msg) -> List (Html msg) -> Html msg
 toggleButton =
     paper "toggle-button"
 
 
-{-| A material design toolbar that is easily customizable
--}
+{-| -}
 toolbar : List (Attribute msg) -> List (Html msg) -> Html msg
 toolbar =
     paper "toolbar"
 
 
-{-| Material design tooltip popup for content
--}
+{-| -}
 tooltip : List (Attribute msg) -> List (Html msg) -> Html msg
 tooltip =
     paper "tooltip"

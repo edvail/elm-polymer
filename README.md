@@ -26,4 +26,4 @@ main = Paper.iconButton [ icon "stars" ] []
 
 Don't forget to install elements (using bower for example), and reference them in your html file.
 
-And ofcouse PR's are welcome.
+And of course PR's are very welcome :)

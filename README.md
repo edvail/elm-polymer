@@ -24,4 +24,5 @@ import Polymer.Events
 main = Paper.iconButton [ icon "stars" ] []
 ```
 
-don't forget to install elements (using bower for example), and reference them in your html file.
+Don't forget to install elements (using bower for example), and reference them in your html file.
+And ofcouse PR's are welcome.

@@ -8,19 +8,14 @@ module Polymer.Events exposing (onIronSelect, onSelectedChanged, onTap, onValueC
 -}
 
 import Html exposing (Attribute)
-import Json.Decode exposing (andThen, at, customDecoder, Decoder, map, string, succeed)
+import Json.Decode exposing (andThen, at, Decoder, map, string, succeed)
 import Html.Events exposing (on)
 
 
 {-| -}
-onIronSelect :
-    (String -> Result String a)
-    -> (a -> msg)
-    -> Attribute msg
-onIronSelect parser tagger =
-    customDecoder detailValue parser
-        |> map tagger
-        |> on "iron-select"
+onIronSelect : (String -> msg) -> Attribute msg
+onIronSelect tagger =
+    map tagger detailValue |> on "iron-select"
 
 
 {-| -}
@@ -43,8 +38,7 @@ onValueChanged =
 
 onChanged : String -> (String -> msg) -> Attribute msg
 onChanged property tagger =
-    map tagger detailValue
-        |> on (property ++ "-changed")
+    map tagger detailValue |> on (property ++ "-changed")
 
 
 detailValue : Decoder String
